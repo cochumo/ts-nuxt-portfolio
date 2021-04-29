@@ -1,17 +1,52 @@
+// 一般
+const siteName = 'サイト名入ります'
+const siteUrl = 'https://igamoto.com/' // スラあり
+const baseUrl = 'https://igamoto.com' // スラなし
+const domain = 'igamoto.com' // ドメイン
+const restApi = '' // REST API URLの共通部分
+
+// head周り
+const title = 'IGAMOTO.COM'
+const titleTemplate = `｜${title}`
+const description = 'm.igamoto portfolio site'
+const keywords = '伊賀本, igamoto, ポートフォリオ, portfolio'
+const ogpImage = ''
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ts-nuxt-portfolio',
+    title,
+    titleTemplate: '%s' + titleTemplate,
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
+      { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        name: 'format-detection',
+        content: 'telephone=no, email=no, address=no',
+      },
+      { hid: 'description', name: 'description', content: description },
+      { hid: 'keywords', name: 'keywords', content: keywords },
+      { hid: 'og:site_name', property: 'og:site_name', content: siteName },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: siteUrl },
+      { hid: 'og:title', property: 'og:title', content: title },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: description,
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: ogpImage,
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
