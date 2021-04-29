@@ -6,7 +6,7 @@
           <div class="px-6">
             <div>
               <a
-                href="#"
+                href="/"
                 class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
                 >IGAMOTO.COM</a
               >
