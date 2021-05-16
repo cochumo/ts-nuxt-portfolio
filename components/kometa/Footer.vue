@@ -5,11 +5,12 @@
         <div class="w-full -mx-6 lg:w-2/5">
           <div class="px-6">
             <div>
-              <a
-                href="/"
+              <nuxt-link
+                to="/"
                 class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
-                >IGAMOTO.COM</a
               >
+                IGAMOTO.COM
+              </nuxt-link>
             </div>
 
             <p class="max-w-md mt-2 text-gray-500 dark:text-gray-400">

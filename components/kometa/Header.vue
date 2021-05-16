@@ -6,11 +6,12 @@
       >
         <div class="flex items-center justify-between">
           <div>
-            <a
+            <nuxt-link
               class="text-xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-gray-700 dark:hover:text-gray-300"
-              href="/"
-              >IGAMOTO.COM</a
+              to="/"
             >
+              IGAMOTO.COM
+            </nuxt-link>
           </div>
 
           <!-- Mobile menu button -->
@@ -30,16 +31,17 @@
         </div>
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <!-- <div class="items-center md:flex">
+        <div class="items-center md:flex">
           <div
             class="flex flex-col mt-4 space-y-8 md:flex-row md:items-center md:mt-0 md:space-y-0 md:space-x-16"
           >
-            <a
+            <nuxt-link
               class="block font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-400 hover:underline"
-              href="#"
-              >glasses Search</a
+              to="/about/"
             >
-            <a
+              About
+            </nuxt-link>
+            <!-- <a
               class="block font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-400 hover:underline"
               href="#"
               >How it works!</a
@@ -59,9 +61,9 @@
               class="flex items-center px-5 py-2 text-sm font-medium tracking-wide text-center text-white capitalize transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
             >
               Get in touch
-            </button>
+            </button> -->
           </div>
-        </div> -->
+        </div>
       </div>
     </nav>
   </header>

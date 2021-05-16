@@ -1,7 +1,9 @@
 <template>
   <div>
     <KometaHeader />
-    <Nuxt />
+    <div class="container px-6 py-10 mx-auto md:py-16">
+      <Nuxt />
+    </div>
     <KometaFooter />
   </div>
 </template>
